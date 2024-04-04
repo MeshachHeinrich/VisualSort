@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+        <title>VISUALSORT</title>
+    </head>
+
+
+    <body>
+        <h1>VISUALSORT</h1>
+        
+        <!-- Buttons to input algorithm parameters -->
+        <form>
+            <label for="datasize">Data size:</label>
+            <input type="text" id="datasize" name="datasize" value="100">
+
+            <button type="button" id="butRun" onclick="generateData()">Run</button>
+        </form>
+
+        <!-- Display the generated data -->
+        <div>
+            <p id="data">Generated data goes here</p>
+        </div>
+
+
+        <!-- Load main page scripts -->
+        <script src="javascript/main.js"></script>
+
+
+    </body>
+
+
+</html>
