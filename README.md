@@ -1,0 +1,2 @@
+# VisualSort
+ Sorting algorithm visualiser
