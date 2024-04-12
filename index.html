@@ -12,14 +12,35 @@
         <!-- Buttons to input algorithm parameters -->
         <form>
             <label for="datasize">Data size:</label>
-            <input type="text" id="datasize" name="datasize" value="100">
+            <input type="text" id="datasize" name="datasize" value="50">
+            <label for="datamax">Maximum value:</label>
+            <input type="text" id="datamax" name="datamax" value="100">
 
-            <button type="button" id="butRun" onclick="generateData()">Run</button>
+            <button type="button" id="butGen" onclick="generateData()">Generate</button>
         </form>
 
         <!-- Display the generated data -->
         <div>
-            <p id="data">Generated data goes here</p>
+            <p id="data" data-values="['some', 'words']">Generated data goes here</p>
+        </div>
+
+        <!-- Buttons to select the algorithm type -->
+        <form>
+            <label for="algtype">Algorithm:</label>
+            <select id="algtype" name="algtype">
+                <option value=bubble>Bubble Sort</option>
+                <option value=insert>Insertion Sort</option>
+                <option value=merge>Merge Sort</option>
+                <option value=quick>Quick Sort</option>
+                <option value=heap>Heap Sort</option>
+            </select>
+
+            <button type="button" id="butRun" onclick="sortBubble()">Run</button>
+        </form>
+
+        <!-- Display the sorted data -->
+        <div>
+            <p id="datasorted" data='[]'>Sorted data goes here</p>
         </div>
 
 
